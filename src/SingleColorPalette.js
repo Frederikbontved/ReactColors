@@ -36,7 +36,7 @@ class SingleColorPalette extends Component {
                 key={color.name} 
                 name={color.name} 
                 background={color[format]} 
-                showLink={false}
+                showingFullPalette={false}
             />
         ));
         return (
@@ -47,7 +47,7 @@ class SingleColorPalette extends Component {
                 <div className="Palette-colors">
                     {colorBoxes}
                     <div className="ColorBox go-back">
-                        <Link to={`/palette/${id}` }className="back-button">Go Back</Link>
+                        <Link to={`/palette/${id}` } className="back-button">Go Back</Link>
                     </div>
                 </div>
                 <PaletteFooter paletteName={paletteName} emoji={emoji} />
